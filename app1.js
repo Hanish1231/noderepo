@@ -15,6 +15,7 @@ app.use((req, res, next)=>{
     })
     .catch((err)=>{
       console.log("Error", err)
+      console.log("pull")
       res.status(403).json(err)
       if(err.name=== "JsonWebTokenError"){
         console.log("Please check token")
@@ -23,6 +24,7 @@ app.use((req, res, next)=>{
   }
   else{
     console.log("Line no 25")
+    // testing 
 return next()
 }
 })
