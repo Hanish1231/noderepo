@@ -1,0 +1,6 @@
+1. GET method // get all the notes
+2. POST method // to save the details. to create a note.
+3. PUT method // update our title or description - id
+4. DELETE method // id
+
+5. GET method // to fetch the items of a todo  - id - mastertable
