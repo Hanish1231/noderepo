@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken')
 const secretKey = "Hanish"
 const generateToken = function(user){
-    const token = jwt.sign({user}, secretKey, {expiresIn : 3000})
+    const token = jwt.sign({user}, secretKey, {expiresIn : 30000})
     console.log("Token is:",token)
     return token
 }
@@ -14,7 +14,6 @@ const verifyToken = function(token){
                 reject(err)
             }
             else{
-                console.log("verified",res)
                 resolve(res)
             }
         })
