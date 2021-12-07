@@ -1,0 +1,9 @@
+1. A separate application
+2. Create required tables
+3. Routes:
+    -> resgisterUser
+    -> updateUser
+    -> login
+    -> search
+    -> getUsers // only if it is manager and bring in only his team members
+    -> upload file  
